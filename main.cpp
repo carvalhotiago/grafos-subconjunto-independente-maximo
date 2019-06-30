@@ -598,8 +598,8 @@ int main(int argc, char * argv[])
 
     if(atoi(argv[7]) != 0)
     {
-        int maximoIteracoesRandomizado = 100;
-        int maximoIteracoesReativo = 1501;
+        int maximoIteracoesRandomizado = 10;
+        int maximoIteracoesReativo = 101;
         int numeroDeAlfas = 10;
         grafo->algoritmoGulosoRandomizadoReativo(maximoIteracoesReativo, maximoIteracoesRandomizado, numeroDeAlfas, outfile);
     }
