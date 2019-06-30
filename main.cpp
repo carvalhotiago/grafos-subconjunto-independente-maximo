@@ -183,12 +183,12 @@ int main(int argc, char * argv[])
     //Dijkstra *dijkistra = new Dijkstra();
     //FloydWarshall *floydWarshall = new FloydWarshall();
 
-    ///************* CONSTRUÇÃO DO GRAFO ******************///
+    ///************* CONSTRUï¿½ï¿½O DO GRAFO ******************///
     /*
         if(lerOuConstruirMenu() == 2)
         {
             int opcaorepresenta = tipodeGrafo();
-            /// Menu do tipo de representação do grafo
+            /// Menu do tipo de representaï¿½ï¿½o do grafo
             switch(opcaorepresenta)
             {
             case 1:
@@ -202,14 +202,14 @@ int main(int argc, char * argv[])
                 cin >>direcionado;
             }
 
-            /// Menu de opções para o grafo
+            /// Menu de opï¿½ï¿½es para o grafo
             cout << "Criando seu Grafo " << endl;
             while(id != -1)
             {
                 opcao = noMenu();
                 switch(opcao)
                 {
-                /// Adicionar Nó
+                /// Adicionar Nï¿½
                 case 1:
                 {
                     cout << "Adicione um vertice informando seu id ou aperte [-1] para terminar o grafo" << endl;
@@ -266,11 +266,11 @@ int main(int argc, char * argv[])
                 /// Adicionar Aresta a um no
                 case 3:
                     break;
-                /// Imprime lista de vértices do no
+                /// Imprime lista de vï¿½rtices do no
                 case 4:
                     grafo->printNos();
                     break;
-                /// Menu de Representação do Grafo
+                /// Menu de Representaï¿½ï¿½o do Grafo
                 case 5:
                 {
                     int opcaorepresenta = tipoDeRepresentacaoMenu();
@@ -298,15 +298,15 @@ int main(int argc, char * argv[])
                 case 7:
                     grafo->removeAresta();
                     break;
-                /// Remover um vértice
+                /// Remover um vï¿½rtice
                 case 8:
                     grafo->removeVertice();
                     break;
-                /// Cria um grafo complementar e representa o mesmo em lista de adjacência
+                /// Cria um grafo complementar e representa o mesmo em lista de adjacï¿½ncia
                 case 9:
                     criaGrafoComplementar(grafo)->printListaAdjacencia();
                     break;
-                /// Cria um grafo complementar e representa o mesmo em matriz de adjacência
+                /// Cria um grafo complementar e representa o mesmo em matriz de adjacï¿½ncia
                 case 10:
                     criaGrafoComplementar(grafo)->matrizAdjacencia(direcionado);
                     break;
@@ -331,7 +331,7 @@ int main(int argc, char * argv[])
                     grafo->imprimePesoAresta();
                     break;
                 case 16:
-                    /// Ordenação Topológica
+                    /// Ordenaï¿½ï¿½o Topolï¿½gica
                     grafo->ordenacaoTopologica();
                     break;
                 case 17:
@@ -388,7 +388,7 @@ int main(int argc, char * argv[])
         else if(lerOuConstruirMenu() == 1)
         {
             int opcaorepresenta = tipodeGrafo();
-            /// Menu do tipo de representação do grafo
+            /// Menu do tipo de representaï¿½ï¿½o do grafo
             switch(opcaorepresenta)
             {
             case 1:
@@ -403,7 +403,7 @@ int main(int argc, char * argv[])
             }
 
             string aux;
-            ifstream myfile ("instancia1.MIS"); // ifstream = padrão ios:in     teste1.txt      instancia1.MIS
+            ifstream myfile ("instancia1.MIS"); // ifstream = padrï¿½o ios:in     teste1.txt      instancia1.MIS
             ofstream saida;
             saida.open("saida.txt");
             auto start = std::chrono::high_resolution_clock::now();
@@ -439,11 +439,11 @@ int main(int argc, char * argv[])
                 opcao = noMenuLeitura();
                 switch(opcao)
                 {
-                /// Imprime lista de vértices do no
+                /// Imprime lista de vï¿½rtices do no
                 case 1:
                     grafo->printNos();
                     break;
-                /// Menu de Representação do Grafo
+                /// Menu de Representaï¿½ï¿½o do Grafo
                 case 2:
                 {
                     int opcaorepresenta = tipoDeRepresentacaoMenu();
@@ -471,15 +471,15 @@ int main(int argc, char * argv[])
                 case 4:
                     grafo->removeAresta();
                     break;
-                /// Remover um vértice
+                /// Remover um vï¿½rtice
                 case 5:
                     grafo->removeVertice();
                     break;
-                /// Cria um grafo complementar e representa o mesmo em lista de adjacência
+                /// Cria um grafo complementar e representa o mesmo em lista de adjacï¿½ncia
                 case 6:
                     criaGrafoComplementar(grafo)->printListaAdjacencia();
                     break;
-                /// Cria um grafo complementar e representa o mesmo em matriz de adjacência
+                /// Cria um grafo complementar e representa o mesmo em matriz de adjacï¿½ncia
                 case 7:
                     criaGrafoComplementar(grafo)->matrizAdjacencia(direcionado);
                     break;
@@ -504,7 +504,7 @@ int main(int argc, char * argv[])
                     grafo->imprimePesoAresta();
                     break;
                 case 13:
-                    /// Ordenação Topológica
+                    /// Ordenaï¿½ï¿½o Topolï¿½gica
                     grafo->ordenacaoTopologica();
                     break;
                 case 14:
@@ -578,28 +578,28 @@ int main(int argc, char * argv[])
     if(atoi(argv[4]) != 0)
     {
         float alfa1 = 0.1;
-        int maximoIteracoesRandomizado = 10;
+        int maximoIteracoesRandomizado = 80;
         grafo->algoritmoGulosoRandomizado(alfa1, maximoIteracoesRandomizado, outfile);
     }
 
     if(atoi(argv[5]) != 0)
     {
         float alfa2 = 0.2;
-        int maximoIteracoesRandomizado = 10;
+        int maximoIteracoesRandomizado = 100;
         grafo->algoritmoGulosoRandomizado(alfa2, maximoIteracoesRandomizado, outfile);
     }
 
     if(atoi(argv[6]) != 0)
     {
         float alfa3 = 0.3;
-        int maximoIteracoesRandomizado = 10;
+        int maximoIteracoesRandomizado = 120;
         grafo->algoritmoGulosoRandomizado(alfa3, maximoIteracoesRandomizado, outfile);
     }
 
     if(atoi(argv[7]) != 0)
     {
-        int maximoIteracoesRandomizado = 10;
-        int maximoIteracoesReativo = 101;
+        int maximoIteracoesRandomizado = 100;
+        int maximoIteracoesReativo = 1501;
         int numeroDeAlfas = 10;
         grafo->algoritmoGulosoRandomizadoReativo(maximoIteracoesReativo, maximoIteracoesRandomizado, numeroDeAlfas, outfile);
     }
